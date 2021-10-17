@@ -1,0 +1,170 @@
+/*Containers*/
+
+.container {
+    width: var(--width-container);
+    max-width: var(--max-width-container);
+    margin: 0 auto;   
+    padding: var(--padding-container); 
+}
+
+
+
+/* fonts */
+.regular-font {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.title-h1 {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+
+.title-h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.title-h3-bold {
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+/*colors */
+
+.purple-theme {
+    color:var(--color-violet);
+}
+
+.green-theme {
+    color: var(--color-green);
+}
+
+.white {
+    color: white;
+}
+
+
+/* margins */
+.mt-1 {
+    margin-top: 20px;
+}
+/* paddings */
+
+.p1 {
+    padding: 0.5rem 0;
+}
+
+.p2 {
+    padding: 1rem 0;
+}
+
+.p1r {
+    padding: 1rem;
+}
+
+/* buttons  */
+
+.btn {
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: var(--color-green);
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 1px -1px 27px -2px rgba(0,0,0,0.75);
+    transform: scale(0.98);
+    
+}
+
+/* underlines */
+
+.violet-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.violet-underline::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 3px;
+    background-color: var(--color-violet);
+}
+
+.green-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.green-underline::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: var(--color-green);
+}
+
+/* flexbox */
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+
+}
+
+/* background forms */
+.violet-background {
+    position: relative;
+}
+
+.violet-background::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: var(--color-violet);
+    width: 80%;
+    height: 80%;
+    top: -30px;
+    left:-30px;
+    z-index: -1;
+}
+
+.green-background {
+    position: relative;
+}
+
+.green-background::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: var(--color-green);
+    width: 80%;
+    height: 80%;
+    top: -30px;
+    right:-35px;
+    z-index: -1;
+}
+

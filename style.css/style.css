@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,400&display=swap');
+
+:root{
+    --color-violet: rgba(172, 40, 193, 1);
+    --color-green: rgba(196, 203, 52, 1);
+    --padding-container: 70px 35px;
+    --width-container: 100%;
+    --max-width-container: 990px;
+    --background-color : rgb(225, 225, 225)
+}
+
+html {
+    font-size: 17px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif; 
+    overflow-x: hidden;
+  
+}
+
+
+/*Hero Section*/
+
+.hero {
+    height: 100vh;
+    min-height: 620px;
+    position: relative;
+}
+
+.black-div {
+    width: 100%;
+    height: 40vh;
+    background-color:  rgba(42, 41, 41, 1);
+    position: relative;
+    z-index: -2;
+}
+
+.hero-container {
+    padding: 0 70px;
+    position: relative;
+    margin-top: -130px;
+}
+
+.vid-container {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.vid-container .video {
+    position: relative;
+}
+
+.vid-container .video::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    right: -35px;
+    top:-10px;
+    bottom:-45px;
+    z-index: -1;
+    background-color: var(--color-violet);
+    overflow: visible;
+    transform: translateY(-20px);
+  
+}
+
+
+
+.vid-container video {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.hero-text {
+    width: 280px;
+    height: auto;
+    margin-top: -70px;
+    background-color: white;
+    position: relative;
+    left: -60px
+}
+
+/* Zumba-info with video */
+
+.zumba-info {
+    background-color: var(--background-color);
+    position: relative;
+    z-index: -2;
+    width: 100%;
+
+}
+
+.zumba-info .container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height:auto;
+    position: relative;
+}
+
+.zumbavideo-container {
+    width: 55%;
+}
+
+.zumba-video {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.zumba-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.zumba-desc {
+    width: 100%;
+    max-width: 380px;
+    margin-left: 20px;
+}
+
+/* .zumba-video::after {
+    content: "" ;
+    display: block;
+    position: absolute;
+    width: 80%;
+    min-height: 80%;
+    background-color: var(--color-green);
+    top: -30px;
+    left: -30px;
+    border-radius: 35px 0 0 0;
+    z-index: -1;
+} */
+
+/* .zumba-benefits {
+    --padding-container: 20px
+} */
+
+.benefit-title{
+    text-align: center;
+}
+
+.benefit-card {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    width: 100%;
+    max-width: 442px;
+    margin: 0 15px;
+}
+
+.img-container img {
+    width: 100%;
+    display: block;
+}
+
+.benefit-desc {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 15px;
+}
+
+.about-container {
+    margin-top: 200px;
+    height: auto;
+    width: 100%;
+    background-color: var(--color-violet);
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+    position: relative;
+}
+
+
+.about-container .container {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  
+}
+
+.about-desc {
+    margin-right: 90px;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 500px;
+}
+
+
+
+.about-desc p {
+    color: rgb(255, 255, 255);
+}
+
+.about-img-container {
+    width: 230px;
+    min-height: 400px;
+    position: absolute;
+    bottom: 0px;
+    right: 10%;
+    transform: translateX(-10%);
+}
+
+.about-img-container img {
+    width: 100%;
+    display: block;
+}
+
+.cta-p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.about-desc .btn {
+    margin: auto;
+}
+
+.testimony-container {
+    justify-content: space-around;
+    padding: 100px 15px
+}
+
+.testimony-card {
+    flex-flow: row nowrap;
+    flex-basis: 450px;
+    margin: 0 10px;
+}
+
+.testimony-card i {
+    display: inline-block;
+    color: var(--color-green);
+    font-size: 4rem;
+    margin-right: 15px;
+}
+
+.testimony-content {
+    margin-top: 20px;
+    box-shadow: 10px 11px 8px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 11px 8px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 11px 8px -7px rgba(0,0,0,0.75);
+}
+
+.contact-me {
+    height: auto;
+    background-color: var(--background-color);
+    position: relative;
+    padding: 10px;
+}
+
+.contact-me::after {
+   display: block;
+   content: "";
+   position: absolute;
+   width: 60px;
+   height: 60px;
+   top: 50%;
+   left: 0;
+   background-color: var(--color-green);
+}
+
+.contact-me::before {
+   display: block;
+   content: "";
+   position: absolute;
+   width: 17%;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   background-color: var(--color-green);
+}
+
+.contact-container {
+    padding: 35px 0;
+    align-items: center;
+}
+
+.left-info {
+    margin-left: 65px;
+}
+
+.left-info-content {
+    width: 100%;
+    max-width: 450px;
+}
+
+
+.contact-me form {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 2px solid rgb(185, 185, 185);
+    padding: 10px;
+    color: black;
+    padding: 10px 0;
+    margin-top: 4px;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: var(--color-green);
+    border: none;
+    cursor: pointer;
+}
+
+input:focus, textarea:focus  {
+    outline: none;
+  }
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(0, 0, 0);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(0, 0, 0);
+  }
+
+ 
+ footer {
+     width: 100%;
+     background-color: rgba(42, 41, 41, 1);
+     color: rgb(255, 255, 255);
+     
+ }
+
+
+ .footer-container {
+     justify-content: space-between;
+     padding: 10px;
+     align-items: center;
+     height: 12vh;
+   
+ }
+
+
+
+ .whatsapp-button {
+     width: 10rem;
+    position: fixed;
+    z-index: 998;
+    bottom: 4vh;
+    right: 4vw;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color:   rgb(55,167,26);
+    border-radius: 10px 10px 0 10px;
+    transition: all 0.9s ease;
+ }
+
+ @media only screen and (max-width: 770px) {
+
+       .hero {
+        height: 80vh;
+        min-height: 550px;
+       }
+       .flex {
+           flex-wrap: wrap;
+           justify-content: flex-start;
+       }
+
+       .container {
+           width: 100%
+       }
+
+       .img-container {
+           margin-bottom: 20px;
+       }
+
+       .benefit-desc {
+           max-width: 650px;
+       }
+
+       .row-reverse {
+           flex-direction: row;
+       }
+
+       .zumba-info .flex {
+           flex-direction: column-reverse;
+       }
+       .zumbavideo-container {
+           width: 100%;
+       }
+       
+       .zumba-benefits {
+           padding-bottom: 0;
+       }
+
+       .zumba-desc {
+        max-width: 80%;
+       }
+
+       .about-container {
+           height: 165vh;
+           margin: 20px 0;
+       }
+
+       .about-container .container {
+        justify-content: center;
+       }
+
+       .about-desc {
+           margin: 0;
+       }
+
+       .about-img-container {
+  
+        position: absolute; 
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+       .testimony-container {
+           justify-content: center;
+       }
+
+       .testimony-card {
+           flex-flow: row nowrap;
+           margin-top: 30px;
+       }
+
+       .left-info {
+           margin: 0 auto;
+       }
+
+       form {
+           margin: 0 auto;
+       }
+       .footer-container  {
+           justify-content: space-between;
+       }
+
+    }
+
+@media only screen and (max-width: 520px) {
+
+    html {
+        font-size: 16px;
+    }
+    
+    .hero {
+        height: 350px;
+        min-height: 400px;
+    }
+    .black-div {
+        display: none;
+    }
+
+    .hero-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .vid-container .video::before {
+       display: none;
+      
+    }
+
+    .hero-text {
+      left: 0;
+      margin: -70px auto;
+      text-align: center;
+    }
+
+    .about-container {
+        height: 180vh;
+        margin: 20px 0;
+    }
+
+    .testimony-container {
+        padding: 0 0 20px 0;
+    }
+
+    .contact-me::before {
+        display: none;
+     }
+
+    .contact-me::after {
+        display: none;
+     }
+
+     .left-info {
+        margin-left: 0;
+    }
+
+    .btn {
+    margin: 0 auto;
+    }
+    
+}
