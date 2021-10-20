@@ -36,7 +36,7 @@
             <div class="container flex">
                 <div class="zumbavideo-container">
                     <div class="zumba-video">
-                        <iframe src="https://www.youtube.com/embed/kh4FmjM2M0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/kh4FmjM2M0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
                 
@@ -176,6 +176,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="footer-container container flex">
@@ -186,7 +187,17 @@
             <p>Rowil Morán 2021</p>
         </div>
     </footer>
-        <a href="https://wa.me/19292944240?text=hola%20me%20gustaría%20unirme%20a%20las%20clases%20de%20zumba" target="_blank" class="whatsapp-button flex"><img src="assets/Social Media/whatsapp.png" alt="whatsap" width="40px"> <p class="whatsapp-text">Get full Info</p></a>
+    <a href="https://wa.me/19292944240?text=hola%20me%20gustaría%20unirme%20a%20las%20clases%20de%20zumba" target="_blank" class="whatsapp-button flex opacity" id="whatsapp"><img src="assets/Social Media/whatsapp.png" alt="whatsap" width="40px"> <p class="whatsapp-text">Get full Info</p></a>
+    <script>
+        const whatsapp = document.getElementById("whatsapp");
+
+       
+        document.addEventListener("DOMContentLoaded", (e)  => {
+            setTimeout(() => {
+                whatsapp.classList.remove("opacity");
+            }, 2000);
+        })
+    </script>
 </body>
 </html>
 

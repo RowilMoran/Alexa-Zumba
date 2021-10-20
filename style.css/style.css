@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,400&display=swap');
 
 :root{
-    --color-violet: rgba(172, 40, 193, 1);
+    --color-violet: #e80c69;
     --color-green: rgba(196, 203, 52, 1);
     --padding-container: 70px 35px;
     --width-container: 100%;
@@ -92,7 +92,6 @@ body {
 .zumba-info {
     background-color: var(--background-color);
     position: relative;
-    z-index: -2;
     width: 100%;
 
 }
@@ -106,6 +105,7 @@ body {
 
 .zumbavideo-container {
     width: 55%;
+    position: relative;
 }
 
 .zumba-video {
@@ -210,8 +210,8 @@ body {
     min-height: 400px;
     position: absolute;
     bottom: 0px;
-    right: 10%;
-    transform: translateX(-10%);
+    right: 15%;
+    transform: translateX(-15%);
 }
 
 .about-img-container img {
@@ -419,28 +419,31 @@ input:focus, textarea:focus  {
        }
 
        .about-container {
-           height: 165vh;
+           height: auto;
            margin: 20px 0;
+           padding: 0;
        }
 
-       .about-container .container {
-        justify-content: center;
+       .about-container .flex {
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
        }
-
+    
        .about-desc {
-           margin: 0;
-       }
+        margin-right: 0;
+    }
 
        .about-img-container {
-  
-        position: absolute; 
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        width: 230px;
+        min-height: 400px;
+        position: static;
+        transform: translateX(0)
     }
 
        .testimony-container {
            justify-content: center;
+           padding: 0 0 20px 0;
        }
 
        .testimony-card {
@@ -491,14 +494,6 @@ input:focus, textarea:focus  {
       text-align: center;
     }
 
-    .about-container {
-        height: 180vh;
-        margin: 20px 0;
-    }
-
-    .testimony-container {
-        padding: 0 0 20px 0;
-    }
 
     .contact-me::before {
         display: none;
@@ -514,6 +509,19 @@ input:focus, textarea:focus  {
 
     .btn {
     margin: 0 auto;
+    }
+
+    .violet-underline::after {
+        width: 23%; 
+    }
+    
+    
+    .green-underline::after {
+        width: 20%;
+    }
+
+    .whatsapp-button {
+        bottom: 6vh;
     }
     
 }

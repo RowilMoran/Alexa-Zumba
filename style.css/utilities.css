@@ -168,3 +168,6 @@
     z-index: -1;
 }
 
+.opacity {
+    opacity: 0;
+}
