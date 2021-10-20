@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,400&display=swap');
 
 :root{
-    --color-violet: rgba(162, 0, 188, 1);
+    --color-violet: rgba(199, 24, 150, 1);
     --color-green: rgba(196, 203, 52, 1);
     --padding-container: 70px 35px;
     --width-container: 100%;
